@@ -9,6 +9,18 @@ const personnes = [
   ];
   const ageMinimum = 25;
 
+  function sumAge(personnes, ageMinimum){
+    let sum = 0;
+
+    personnes.map(personne => {
+      return sum
+  })
+  console.log(sum);
+  }
+
+
+  const sumTot = sumAge(personnes, ageMinimum)
+  console.log(sumTot);
 
   /**
    * Ex: Somme des âges : 75
