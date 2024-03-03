@@ -9,19 +9,22 @@ const personnes = [
   ];
   const ageMinimum = 25;
 
+  // Tri des utilisateurs par ordre
+  personnes.sort((a,b) => a.nom.localeCompare(b.nom))
+
   function sumAge(personnes, ageMinimum){
     let sum = 0;
 
     personnes.map(personne => {
+     sum += personne.age
       return sum
   })
   console.log(sum);
+
   }
-
-
-  const sumTot = sumAge(personnes, ageMinimum)
-  console.log(sumTot);
+const sumTot = sumAge(personnes, ageMinimum);
 
   /**
    * Ex: Somme des âges : 75
    */
+  console.log(personnes)
